@@ -1,0 +1,186 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+/* Header*/
+.header {
+    box-sizing: border-box;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(33, 59, 126, 1);
+}
+
+.site-logo {
+    width: auto;
+}
+
+.site-menu {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-menu > li {
+    display: flex;
+    min-height: 80px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    padding: 0 18px;
+    background-color: #213B7E;
+}
+
+.menu-link:hover {
+    color: #213B7E;
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 153px;
+    min-height: 50px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+    background-color: #EA5D21;
+    text-decoration: none;
+}
+
+/* Main */
+.main {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 911px;
+    margin: 0 auto;
+    padding: 0 2vw;
+    flex-grow: 1;
+}
+
+.class-foto {
+    object-fit: cover;
+    width: 100%;
+    max-width: 523px;
+    height: 316px;
+}
+
+.main-heading {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.17;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px; 
+}
+
+.intro-text {
+    width: 100%;
+    max-width: 634px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px; 
+}
+
+.intro-text > strong {
+    font-weight: 700;
+}
+
+.intro-text > em {
+    color: #CF5510;
+    font-style: italic;
+}
+
+/* Students */
+.students {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.student > img {
+    height: auto;
+}
+
+.student-name {
+    display: flex;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 16px;
+    min-height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(33, 59, 126, 1);
+}
+
+.copywrite {
+    color: rgba(255, 255, 255, 0.5) ;
+}
+
+.innop-link {
+    color: rgba(255, 255, 255, 0.5) ;
+}
+
+/* Responsive */
+@media (max-width: 630px) {
+    .header {
+        justify-content: center;
+        padding: 1em 16px;
+        gap: 1em;
+    }
+    .site-logo {
+        width: 100%;
+        min-height: 80px;
+    }
+    .site-menu {
+        justify-content: center;
+    }
+}
+
+/* JS */
+.active-link {
+    color: #213B7E;
+    background-color: #fff;
+    text-decoration: none;
+}
